@@ -1,0 +1,221 @@
+%-------------------------
+% Resume in Latex
+% Author : Kamal
+% Based off of: https://github.com/imkamaladhikari/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% Professional Color Palette Definitions
+\definecolor{primarynavy}{HTML}{1A365D} % Deep Navy for Section Headers
+\definecolor{iconaccent}{HTML}{4A5568}  % Deep Slate Blue for Icons
+\definecolor{linkedinblue}{HTML}{0077B5} % Official LinkedIn Blue (Kept for the profile link)
+\definecolor{light-grey}{HTML}{E2E8F0}  % Light grey boundary line
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{0.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underline
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Professional Sans Serif Section Titles
+\titleformat{\section}{
+    \color{primarynavy}\bfseries\vspace{4pt}\raggedright\large
+}{}{0em}{}[\color{light-grey}{\titlerule[1.5pt]}\vspace{-3pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ 
+      \textit{#3} & {\color{dark-grey}\small #4}\\ 
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \color{primarynavy} KAMAL SINGH} \\ \vspace{6pt}
+    \small 
+    \textcolor{iconaccent}{\faPhone*} \texttt{ +91 8285008438} \hspace{4pt} $|$ \hspace{4pt}
+    \textcolor{iconaccent}{\faEnvelope} \hspace{2pt} \texttt{kamal.singh.adhikari@outlook.com} \hspace{4pt} $|$ \hspace{4pt}
+    \href{https://www.linkedin.com/in/imkamaladhikari}{\textcolor{linkedinblue}{\faLinkedin} \texttt{ imkamaladhikari}} \hspace{4pt} $|$ \hspace{4pt}
+    \textcolor{iconaccent}{\faMapMarker*} \hspace{2pt} \texttt{New Delhi, India}
+    \\ \vspace{-3pt}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Implementation Consultant}{April 2024 -- Present}
+      {\href{https://triotree.com/}{\myuline {TrioTree Technologies Pvt Ltd}}}{Noida, India}
+      
+      \resumeItemListStart
+        \resumeItem{Lead end-to-end healthcare IT implementations across multiple hospitals, ensuring on-time and error-free go-lives.}
+        \resumeItem{Translate business requirements into actionable implementation plans and precise software configuration strategies.}
+        \resumeItem{Collaborate with clients, developers, and QA teams to ensure seamless deployment and post-go-live stability.}
+        \resumeItem{Manage technical teams to perform SQL data fixes, stored procedure updates, and system integrations improving performance and reliability.}
+        \resumeItem{Oversee project deliverables, monitor progress, and proactively mitigate risks to ensure successful project completion.}
+        \resumeItem{Delivered 10+ HIS/LIS implementations on schedule with zero major post-go-live issues.}
+        \resumeItem{Directed SQL optimization and stored procedure revisions, enhancing system performance by 20\%.}
+        \resumeItem{Designed and executed 100+ test cases, reducing post-go-live defects by 30\%.}
+        \resumeItem{Led legacy data migration and cleansing initiatives with 100\% accuracy.}
+        \resumeItem{Implemented LIS machine interfacing, reducing lab turnaround times by 25\%.}
+        \resumeItem{Authored Business Requirement Documents (BRDs), logged and validated 50+ bugs, ensuring smooth coordination with the product and development teams.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Associate Business Analyst}{May 2023 -- April 2024}
+      {\href{https://triotree.com/}{\myuline {TrioTree Technologies Pvt Ltd}}}{Noida, India}
+      \resumeItemListStart
+        \resumeItem{Collected requirements from 10+ hospital departments; configured HIS/LIS modules accordingly.}
+        \resumeItem{Created \& executed 150+ manual test cases (Billing, Radiology, LIS etc), cutting error recurrence by 40\%.}
+        \resumeItem{Coordinated bug resolution with developers, achieving a 20\% faster closure rate.}
+        \resumeItem{Optimized SQL queries \& validated migrated data with 100\% accuracy. Authored BRDs and reusable test cases, boosting QA efficiency by 35\%.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Associate Business Analyst (Trainee)}{May 2022 -- May 2023}
+      {\href{https://triotree.com/}{\myuline {TrioTree Technologies Pvt Ltd}}}{Noida, India}
+      \resumeItemListStart
+        \resumeItem{Supported 10+ LIS/HIS migration projects, ensuring zero discrepancies in legacy-to-HIS data transfer.}
+        \resumeItem{Assisted in configuring 30+ LIS machine interfaces, reducing reporting delays.}
+        \resumeItem{Conducted defect testing \& retesting, ensuring 95\% bug resolution pre-go-live.}
+        \resumeItem{Delivered client training \& support, driving 90\% user adoption within 3 months.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Key Achievements (Across Roles)}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Healthcare IT Migrations}}{Jan. 2024 -- Present}
+       \resumeItemListStart
+      \resumeItem{Successfully implemented healthcare IT systems in 10+ hospitals PAN India}
+          \resumeItem{Reduced deployment timelines by 70\% through optimized rollout strategies.}
+          \resumeItem{Executed 100+ test cases, logged and resolved 200+ system bugs across hospital implementations.}
+          \resumeItem{Configured LIS machine interfaces (ASTM protocol) and automated notifications (SMTP/API).}
+          \resumeItem{Ensured smooth SQL data migration for 1M+ patient records with $<$1\% error rate.}
+       \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {IGNOU University}{}
+      {Bachelor of Computer Application (BCA)}{New Delhi, India}
+      
+    \resumeSubheading
+      {Diploma}{}
+      {Master Diploma in Software Engineering}{New Delhi, India}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Core Skills}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+        \textbf{Project Management:} {Deployment Planning, Workflow Mapping, UAT, Stakeholder Engagement} \vspace{2pt} \\
+        \textbf{Healthcare IT:} {HIS, EMR, Radiology, Billing, Inventory, Laboratory Systems} \vspace{2pt} \\
+        \textbf{Testing \& Quality Assurance:} {Manual Testing, Test Case Design, Bug Reporting, Defect Tracking} \vspace{2pt} \\
+        \textbf{Technical Skills:} {SQL Queries \& Procedures, Data Fixing, Legacy Data Migration, Master Data Setup} \vspace{2pt} \\
+        \textbf{System Configuration:} {IIS, SMTP, ASTM Interfaces, API Integrations} \vspace{2pt} \\
+        \textbf{Documentation:} {Requirement Gathering, SRS, BRD, Gap Analysis, Workflow Mapping}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
